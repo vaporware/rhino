@@ -1,0 +1,8 @@
+- if flash.any?
+  .flashes
+    - user_facing_flashes.each do |key, value|
+      - if value.present?
+        %div{class: "alert alert-dismissable alert-#{key}"}
+          = value
+          %a{href: "#", class: "close", data: {dismiss: "alert"}}
+            &times;
