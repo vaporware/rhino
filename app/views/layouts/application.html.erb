@@ -17,9 +17,13 @@
 
   <%= render "navbar" %>
 
-  <div class="col-md-offset-2 col-md-8">
-    <%= render "flashes" %>
-    <%= yield %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <%= render "flashes" %>
+        <%= yield %>
+      </div>
+    </div>
   </div>
 
   <%= render "javascript" %>
