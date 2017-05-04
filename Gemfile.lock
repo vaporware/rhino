@@ -131,7 +131,6 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.0.3)
-    jwt (1.5.6)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.1.5)
@@ -310,7 +309,6 @@ DEPENDENCIES
   haml-rails (~> 0.9)
   high_voltage
   jquery-rails
-  jwt
   launchy
   listen
   normalize-rails (~> 3.0.0)
