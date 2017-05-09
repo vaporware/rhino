@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
+  get "/navbar", to: "ui_components#navbar"
+
 end

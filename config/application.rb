@@ -15,5 +15,11 @@ module Rhino
     end
     config.action_controller.action_on_unpermitted_parameters = :raise
     config.active_job.queue_adapter = :delayed_job
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'localhost:4000'
+        resource '*', :headers => :any, :methods => [:get, :delete, :options]
+      end
+    end
   end
 end
